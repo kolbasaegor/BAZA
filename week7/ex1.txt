@@ -1,0 +1,20 @@
+CREATE TABLE Orders(
+  orderId integer NOT NULL,
+  date date NOT NULL,
+  customerId integer NOT NULL,
+  customerName varchar(45),
+  city varchar(20),
+  itemId integer NOT NULL,
+  itemName varchar(100) NOT NULL,
+  quant integer NOT NULL,
+  price decimal(8, 2) NOT NULL
+);
+
+INSERT INTO Orders(orderId, date, customerId, customerName, city, itemId, itemName, quant, price)
+VALUES
+(2301, '2011-02-23', 101, 'Martin', 'Prague', 3786, 'Net', 3, 35.00),
+(2301, '2011-02-23', 101, 'Martin', 'Prague', 4011, 'Packet', 6, 65.00),
+(2301, '2011-02-23', 101, 'Martin', 'Prague', 9132, 'Pack-3', 8, 4.75),
+(2302, '2011-02-25', 107, 'Herman', 'Madrid', 5794, 'Pack-6', 4, 5.00),
+(2303, '2011-02-27', 110, 'Pedro', 'Moscow', 4011, 'Packet', 2, 65.00),
+(2303, '2011-02-27', 110, 'Pedro', 'Moscow', 3141, 'Cover', 2, 10.00)
